@@ -139,7 +139,7 @@ const LenderBox = {
             iconColor: "purple.500"
         },
     ],
-    action: { href: "/dashboard", label: "Start Investing" },
+    action: { href: "/", label: "Start Investing" },
     isHighlighted: true,
 };
 
@@ -156,7 +156,7 @@ const BorrowerBox = {
         { title: "Empower Your Growth", iconColor: "purple.500" },
         { title: "Transparent Terms", iconColor: "purple.500" },
     ],
-    action: { href: "/dashboard", label: "Get Funded" },
+    action: { href: "/", label: "Get Funded" },
 };
 
 

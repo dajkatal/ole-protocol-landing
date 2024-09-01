@@ -36,7 +36,9 @@ const siteConfig = {
         href: '#faq', // Added href
       },
       {
-        label: 'Connect with OCID',
+        id: 'demo',
+        label: '▶ Watch Demo',
+        href: '#demo',
         variant: 'primary',
       },
     ],

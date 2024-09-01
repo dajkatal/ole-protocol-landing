@@ -37,14 +37,14 @@ const Navigation: React.FC = () => {
     return (
         <HStack spacing="2" flexShrink={0}>
             {siteConfig.header.links.map(({ href, id, label, variant, ...props }, i) => {
-                // Check if the current button is "Connect with OCID"
-                if (label === 'Connect with OCID') {
+                // Check if the current button is "▶ Watch Demo"
+                if (label === '▶ Watch Demo') {
                     return (
                         <Button
                             key={i}
                             variant={variant}
-                            onClick={logIn}  // Assign the login function to the onClick
-                        >
+                            onClick={() => window.location.href = "#demo"}  // Redirects to twitter.com on click
+>
                             {label}
                         </Button>
                     );

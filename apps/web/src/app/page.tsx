@@ -42,6 +42,7 @@ import {
 import { Typewriter } from 'react-simple-typewriter'
 import { ButtonLink } from 'src/landingpage/components/button-link/button-link'
 import { Faq } from 'src/landingpage/components/faq'
+import { Demo } from 'src/landingpage/components/demo'
 import { Features } from 'src/landingpage/components/features'
 import { BackgroundGradient } from 'src/landingpage/components/gradients/background-gradient'
 import { Hero } from 'src/landingpage/components/hero'
@@ -82,6 +83,7 @@ const Home = () => {
           {/*<PricingSection />*/}
           <UserSectionComponent />
           <FaqSection />
+          <DemoSection />
         </Box>
       </Box>
     </Layout>
@@ -94,7 +96,7 @@ const HeroSection: React.FC = () => {
   return (
       <Box position="relative" overflow="hidden">
         <BackgroundGradient height="100%" zIndex="-1" />
-        <Container maxW="container.xl" pt={{ base: 60, lg: 40 }} pb="40">
+        <Container maxW="container.xl" pt={{ base: 60, lg: 40}} pb="30">
           <Stack direction={{ base: 'column', lg: 'row' }} alignItems="center">
             <Hero
                 id="home"
@@ -141,8 +143,8 @@ const HeroSection: React.FC = () => {
                   </Link>
                 </HStack>
                 <ButtonGroup spacing={4} alignItems="center">
-                  <Button colorScheme="primary" size="lg" onClick={logIn}>
-                    Get Started
+                  <Button colorScheme="primary" size="lg" onClick={() => window.location.href = "https://x.com/intent/user?screen_name=OLEProtocol"}>
+                  Follow for Updates on 𝕏
                   </Button>
                 </ButtonGroup>
               </FallInPlace>
@@ -329,7 +331,7 @@ const HighlightsSection = () => {
   ]
 
   return (
-    <Highlights id="opportunities">
+    <Highlights id="">
       <HighlightsItem
         colSpan={[1, null, 2]}
         title="Empowering Education Finance"
@@ -519,5 +521,14 @@ const PricingSection = () => {
 const FaqSection = () => {
   return <Faq {...faq} />
 }
+
+const DemoSection = () => {
+  return <Demo 
+  title="The OLE Protocol in Action"
+  description="Watch the demo to get a better understanding of the OLE Protocol."
+  videoUrl="https://www.youtube.com/embed/44eGPnfVTRs?si=dCa0zRjzWnGpaYCS" 
+/>
+}
+
 
 export default Home
