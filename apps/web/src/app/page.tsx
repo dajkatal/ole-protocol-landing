@@ -144,7 +144,7 @@ const HeroSection: React.FC = () => {
                 </HStack>
                 <ButtonGroup spacing={4} alignItems="center">
                   <Button colorScheme="primary" size="lg" onClick={() => window.location.href = "https://x.com/intent/user?screen_name=OLEProtocol"}>
-                  Follow for Updates on 𝕏
+                  Follow on 𝕏 for updates
                   </Button>
                 </ButtonGroup>
               </FallInPlace>

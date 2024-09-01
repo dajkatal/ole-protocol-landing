@@ -79,7 +79,7 @@ const UserBox: React.FC<UserBoxProps> = (props) => {
                     feature ? <UserFeature key={i} {...feature} /> : <br key={i} />
                 )}
             </UserFeatures>
-            <Button colorScheme="primary" onClick={logIn}>
+            <Button colorScheme="primary" onClick={() => alert("Coming soon! Follow @OLEProtocol on 𝕏 to stay updated.")}>
                 {action.label || "Learn More"}
             </Button>
         </VStack>
